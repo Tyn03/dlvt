@@ -16,12 +16,16 @@ class App extends Component {
       foo: "bar",
       resumeData: {},
       sharedData: {},
+      currentLanguage: "eng", // Mặc định là ngôn ngữ chính
+
     };
   }
 
   applyPickedLanguage(pickedLanguage, oppositeLangIconId) {
     this.swapCurrentlyActiveLanguage(oppositeLangIconId);
     document.documentElement.lang = pickedLanguage;
+    const isPrimaryLanguage = pickedLanguage === window.$primaryLanguage;
+    this.setState({ currentLanguage: isPrimaryLanguage ? "eng" : "fr" });
     var resumePath =
       document.documentElement.lang === window.$primaryLanguage
         ? `res_primaryLanguage.json`
@@ -111,7 +115,7 @@ class App extends Component {
           >
             <span
               className="iconify language-icon"
-              data-icon="twemoji-flag-for-flag-poland"
+              data-icon="twemoji-flag-for-flag-france"
               data-inline="false"
               id={window.$secondaryLanguageIconId}
             ></span>
@@ -120,19 +124,26 @@ class App extends Component {
         <About
           resumeBasicInfo={this.state.resumeData.basic_info}
           sharedBasicInfo={this.state.sharedData.basic_info}
-        />
-        <Projects
-          resumeProjects={this.state.resumeData.projects}
-          resumeBasicInfo={this.state.resumeData.basic_info}
-        />
-        <Skills
-          sharedSkills={this.state.sharedData.skills}
-          resumeBasicInfo={this.state.resumeData.basic_info}
+          currentLanguage={this.state.currentLanguage}
+
         />
         <Experience
           resumeExperience={this.state.resumeData.experience}
           resumeBasicInfo={this.state.resumeData.basic_info}
+          currentLanguage={this.state.currentLanguage}
         />
+        
+        <Skills
+          sharedSkills={this.state.sharedData.skills}
+          resumeBasicInfo={this.state.resumeData.basic_info}
+          currentLanguage={this.state.currentLanguage}
+        />
+        <Projects
+          resumeProjects={this.state.resumeData.projects}
+          resumeBasicInfo={this.state.resumeData.basic_info}
+          currentLanguage={this.state.currentLanguage}
+        />
+        
         <Footer sharedBasicInfo={this.state.sharedData.basic_info} />
       </div>
     );

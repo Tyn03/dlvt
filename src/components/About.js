@@ -3,8 +3,19 @@ import { Icon } from "@iconify/react";
 import angularIcon from "@iconify/icons-logos/angular-icon";
 import reactIcon from "@iconify/icons-logos/react";
 import vueIcon from "@iconify/icons-logos/vue";
+import javaIcon from "@iconify/icons-logos/java";
+import nodejsIcon from "@iconify/icons-logos/nodejs";
+import dataeng from "./dataproject"
+import datafr from "./datafrancais"
 
 class About extends Component {
+  getDescriptionByLanguage(language) {
+    if (language === "eng") {
+      return dataeng.basicInfo.description; // English data
+    } else {
+      return datafr.basicInfo.description; // French data
+    }
+  }
   render() {
     if (this.props.sharedBasicInfo) {
       var profilepic = "images/" + this.props.sharedBasicInfo.image;
@@ -13,6 +24,9 @@ class About extends Component {
       var sectionName = this.props.resumeBasicInfo.section_name.about;
       var hello = this.props.resumeBasicInfo.description_header;
       var about = this.props.resumeBasicInfo.description;
+      var language = this.props.currentLanguage;
+      //console.log(language)
+      var getDes = this.getDescriptionByLanguage(language);
     }
 
     return (
@@ -31,7 +45,7 @@ class About extends Component {
                     alt="Avatar placeholder"
                   />
                   <Icon
-                    icon={angularIcon}
+                    icon={javaIcon}
                     style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
                   />
                   <Icon
@@ -39,7 +53,7 @@ class About extends Component {
                     style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
                   />
                   <Icon
-                    icon={vueIcon}
+                    icon={nodejsIcon }
                     style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
                   />
                 </span>
@@ -80,7 +94,8 @@ class About extends Component {
                     <span className="wave">{hello} :) </span>
                     <br />
                     <br />
-                    {about}
+                    <div dangerouslySetInnerHTML={{ __html: getDes }}
+></div>
                   </div>
                 </div>
               </div>

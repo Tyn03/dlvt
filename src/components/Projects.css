@@ -1,0 +1,13 @@
+.projects-container {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    gap: 10px;
+    padding: 10px;
+    scroll-behavior: smooth; /* Smooth scrolling for better UX */
+    scrollbar-width: none; /* For Firefox */
+  }
+  
+  .projects-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for WebKit browsers */
+  }
+  

@@ -1,7 +1,7 @@
 {
     "basic_info": {
       "description_header": "Hi",
-      "description": "👋 I'm Davina Griss. Fictional person for preview purposes :) I'm working with newest front-end frameworks like Angular, React and Vue. What you are seeing now is portfolio template from Dorota1997. If you like this portfolio template, make sure to ⭐ the repository to make it more recognizable for other users. Thank you 💜",
+      "description": "👋 Hi Everyone, I am DO Uy Khang from VietNam. I am currently student at 4th INSA Centre Val de Loire, Bourges, Cher, France.\n\nMy actual study field is software engineering and Cyber Security Information. I have a passion for building innovative software solutions that make an impact. With a strong foundation in algorithms and a solid understanding of Java and C, I have honed my skills in Object-Oriented Programming (OOP) within Java. When I am not coding, you can find me exploring new technologies, reading books, or playing video games. Along both university and personal projects, I have picked up a range of skills—using Node.js, React, Next.js for development, Docker for deployment, and even getting a taste of cybersecurity.",
       "section_name": {
         "about": "About me",
         "projects": "Projects",
@@ -11,62 +11,59 @@
     },
     "projects": [
       {
-        "title": "Animal Shelter",
-        "startDate": "2020",
-        "description": "The most expanded application I had opportunity to work with. I've learned many technologies and my code was reviewed by awesome curator. Application handles all adoption processess and allows to store all evidence on adopting animals from animal shelter.",
+        "title": "KD Store",
+        "startDate": "2024",
+        
+          "description": "The short run\n\nI developed a simple e-commerce website that allows users to buy and sell products online. The website includes the following basic features:\n\n- **Product Listing Page**: Displays a list of products with images, prices, and detailed descriptions.\n- **Shopping Cart**: Allows users to add, modify, or remove products from the cart.\n- **Checkout Process**: Integrates a simple checkout flow for completing orders.\n- **Product Management Page (for sellers)**: Enables sellers to add, edit, or delete products.\n\n### Tech Stack & Learnings\n\n- **Backend**: Worked with Node.js for building APIs.\n- **Frontend**: React.js for dynamic UI, using component-based architecture.\n- **Communication**: APIs for connecting backend and frontend.\n\nThe project taught me the importance of modularity, as each feature had its own structure (e.g., controllers, models, etc.).",
+        
+        
         "images": [
-          "images/portfolio/animal-shelter/p1.jpg",
-          "images/portfolio/animal-shelter/p2.jpg"
+          "images/portfolio/kdstore/ava.jpg",
+          "images/portfolio/kdstore/haugai.jpg",
+          "images/portfolio/kdstore/anh2.jpg",
+          "images/portfolio/kdstore/anh3.jpg"
         ],
         "url": "",
         "technologies": [
           {
             "class": "devicon-angularjs-plain",
-            "name": "Angular"
-          },
-          {
-            "class": "devicon-typescript-plain",
-            "name": "TypeScript"
-          },
-          {
-            "class": "devicon-csharp-plain",
-            "name": "C#"
-          }
-        ]
-      },
-      {
-        "title": "Photography",
-        "startDate": "2018",
-        "description": "Personal project for study subject. I was responsible for testing photography application that optimizes images with popular algorithms used by graphic editors like Pixlr or Adobe Photoshop. I've earned A grade :)",
-        "images": [
-          "images/portfolio/photography/p1.jpg",
-          "images/portfolio/photography/p2.jpg"
-        ],
-        "url": "https://github.com",
-        "technologies": [
-          {
-            "class": "devicon-react-original",
             "name": "React"
           },
           {
-            "class": "devicon-javascript-plain",
-            "name": "JavaScript"
+            "class": "devicon-typescript-plain",
+            "name": "Nodejs"
+          },
+          {
+            "class": "devicon-csharp-plain",
+            "name": "java"
           }
         ]
       },
       {
-        "title": "3D Object Viewer",
-        "startDate": "2015",
+        "title": "ChatApp",
+        "startDate": "2024",
+        "description": "Personal project for study subject. I was responsible for testing photography application that optimizes images with popular algorithms used by graphic editors like Pixlr or Adobe Photoshop. I've earned A grade :)",
+        "images": [
+          "images/portfolio/chatapp/halo.png",
+          "images/portfolio/chatapp/chat.png",
+          "images/portfolio/chatapp/setava.png"
+        ],
+        "url": "https://halochatttttt.vercel.app/"
+        
+      },
+      {
+        "title": "ShoeShop",
+        "startDate": "2023",
         "description": "One of the first apps I was working on my internship. I had to develop front-end implementation for app that shows 3D models of known buildings. This was also my first project in Angular framework. I've learned a lot!",
         "images": [
-          "images/portfolio/adventure/p1.jpg",
-          "images/portfolio/adventure/p2.jpg"
+          "images/portfolio/shoeshop/shoe1.png",
+          "images/portfolio/shoeshop/shoe2.png"
         ],
-        "url": "https://github.com",
+        "url": "https://tyn03.github.io/shoe-Web/",
         "technologies": [
           {
             "class": "devicon-angularjs-plain",
-            "name": "Angular"
+            "name": "HTML"
           },
           {
             "class": "devicon-typescript-plain",
@@ -77,42 +74,37 @@
             "name": "C#"
           }
         ]
+      },
+      {
+        "title": "solarsystem",
+        "startDate": "2023",
+        "description": "One of the first apps I was working on my internship. I had to develop front-end implementation for app that shows 3D models of known buildings. This was also my first project in Angular framework. I've learned a lot!",
+        "images": [
+          "images/portfolio/solarsystem/solarsystem.png"
+          
+        ],
+        "url": "https://antiinsa.github.io/solar-demo/"
+        
       }
     ],
     "experience": [
       {
-        "company": "DefOpenSource",
+        "company": "Sarl Biwa",
         "title": "Front-End Developer",
-        "years": "10.2019 - present",
+        "years": "5.2024-6.2024",
         "mainTech": [
-          "Angular 8/9/10"
+          "Savoie, France"
         ],
         "technologies": [
-          "REST API",
-          "RxJS",
+          "ReactJS",
           "JavaScript",
-          "Bootstrap",
-          "MDBootstrap",
-          "EF Core",
-          ".NET Core",
-          "SignalR",
-          "Angular Material"
-        ]
-      },
-      {
-        "company": "Serros Solutions",
-        "title": "Intern",
-        "years": "01.2018 - 09.2019",
-        "mainTech": [
-          "Angular 7/8"
+          "Jira",
+          "Bitbucket",
+          "Atlassian",
+          "Forge API"
         ],
-        "technologies": [
-          "RxJS",
-          "Django",
-          "PHP",
-          "JavaScript",
-          "DHTMLX Gantt"
-        ]
+        "description":""
       }
+      
     ]
   }

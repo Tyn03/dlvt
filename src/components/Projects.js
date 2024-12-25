@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import ProjectDetailsModal from "./ProjectDetailsModal";
+import "./Projects.css";
 
 class Projects extends Component {
   constructor(props) {
@@ -18,11 +19,14 @@ class Projects extends Component {
     let detailsModalClose = () => this.setState({ detailsModalShow: false });
     if (this.props.resumeProjects && this.props.resumeBasicInfo) {
       var sectionName = this.props.resumeBasicInfo.section_name.projects;
+      var language = this.props.currentLanguage;
+      console.log(language)
       var projects = this.props.resumeProjects.map(function (projects) {
         return (
           <div
             className="col-sm-12 col-md-6 col-lg-4"
             key={projects.title}
+            language={language}
             style={{ cursor: "pointer" }}
           >
             <span className="portfolio-item d-block">
@@ -54,12 +58,24 @@ class Projects extends Component {
             <span>{sectionName}</span>
           </h1>
           <div className="col-md-12 mx-auto">
-            <div className="row mx-auto">{projects}</div>
+          <div
+              className="projects-container"
+              style={{
+                display: "flex",
+                overflowX: "auto", // Enable horizontal scrolling
+                gap: "10px",
+                padding: "10px",
+                scrollBehavior: "smooth", // Smooth scrolling for better UX
+              }}
+            >
+              {projects }
+            </div>
           </div>
           <ProjectDetailsModal
             show={this.state.detailsModalShow}
             onHide={detailsModalClose}
             data={this.state.deps}
+            language={this.props.currentLanguage}
           />
         </div>
       </section>

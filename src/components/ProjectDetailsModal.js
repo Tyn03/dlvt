@@ -3,8 +3,76 @@ import { Modal } from "react-bootstrap";
 import AwesomeSlider from "react-awesome-slider";
 import AwesomeSliderStyles from "../scss/light-slider.scss";
 import AwesomeSliderStyles2 from "../scss/dark-slider.scss";
+import dataeng from "./dataproject";
+import datafr from "./datafrancais";
+
 import "react-awesome-slider/dist/custom-animations/scale-out-animation.css";
 class ProjectDetailsModal extends Component {
+  getProjectsByLanguage(language) {
+    
+    if (language == 'eng') {
+      return (
+        <>
+          {dataeng.projects.map((project, index) => {
+            console.log(project)
+              // Check if the project's title matches the selected title
+              if (project.title === this.props.data.title) {
+                return (
+                  <div
+                    key={index}
+                    style={{
+                      border: "1px solid #ddd",
+                      margin: "20px",
+                      padding: "10px",
+                    }}
+                  >
+                    <h2>{project.title}</h2>
+                    <p>{project.startDate}</p>
+                    <div
+                      className="modal-description"
+                      dangerouslySetInnerHTML={{ __html: project.description }}
+                    ></div>
+                  </div>
+                );
+              }
+              return null; // Do not render anything if the title doesn't match
+            })}
+                
+      
+                
+              
+        </>
+      ); // English data
+    } else {
+      return (
+        <>
+         {datafr.projects.map((project, index) => {
+              // Check if the project's title matches the selected title
+              if (project.title === this.props.data.title) {
+                return (
+                  <div
+                    key={index}
+                    style={{
+                      border: "1px solid #ddd",
+                      margin: "20px",
+                      padding: "10px",
+                    }}
+                  >
+                    <h2>{project.title}</h2>
+                    <h2>{project.startDate}</h2>
+                    <div
+                      className="modal-description"
+                      dangerouslySetInnerHTML={{ __html: project.description }}
+                    ></div>
+                  </div>
+                );
+              }
+              return null; // Do not render anything if the title doesn't match
+            })}
+        </>
+      ); // French data
+    }
+  }
   render() {
     if (this.props.data) {
       const technologies = this.props.data.technologies;
@@ -12,28 +80,15 @@ class ProjectDetailsModal extends Component {
       var title = this.props.data.title;
       var description = this.props.data.description;
       var url = this.props.data.url;
-      if (this.props.data.technologies) {
-        var tech = technologies.map((icons, i) => {
-          return (
-            <li className="list-inline-item mx-3" key={i}>
-              <span>
-                <div className="text-center">
-                  <i className={icons.class} style={{ fontSize: "300%" }}>
-                    <p className="text-center" style={{ fontSize: "30%" }}>
-                      {icons.name}
-                    </p>
-                  </i>
-                </div>
-              </span>
-            </li>
-          );
-        });
+      var language = this.props.language;
+      console.log(language)
+      var getPro = this.getProjectsByLanguage(language);
         if (this.props.data.images) {
           var img = images.map((elem, i) => {
             return <div key={i} data-src={elem} />;
           });
         }
-      }
+      
     }
     return (
       <Modal
@@ -78,7 +133,7 @@ class ProjectDetailsModal extends Component {
           </div>
           <div className="col-md-10 mx-auto">
             <h3 style={{ padding: "5px 5px 0 5px" }}>
-              {title}
+              
               {url ? (
                 <a
                   href={url}
@@ -93,10 +148,8 @@ class ProjectDetailsModal extends Component {
                 </a>
               ) : null}
             </h3>
-            <p className="modal-description">{description}</p>
-            <div className="col-md-12 text-center">
-              <ul className="list-inline mx-auto">{tech}</ul>
-            </div>
+            <p className="modal-description">{getPro}</p>
+            
           </div>
         </div>
       </Modal>

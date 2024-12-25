@@ -5,14 +5,52 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import Badge from "react-bootstrap/Badge";
-
+import dataeng from "./dataproject"
+import datafr from "./datafrancais"
 class Experience extends Component {
+
+  getExperienceByLanguage(language) {
+
+    if (language === "eng") {
+      return (
+        <>
+          {dataeng.experience.map((e, index) => {
+
+            return (
+              <div dangerouslySetInnerHTML={{ __html: e.description }}
+              ></div>
+            )
+
+          })}
+        </>
+      ); // English data
+    } else{
+      return (
+        <>
+          {datafr.experience.map((e, index) => {
+
+            return (
+              <div dangerouslySetInnerHTML={{ __html: e.description }}
+              ></div>
+            )
+
+          })}
+        </>
+      );
+    }
+  }
   render() {
     if (this.props.resumeExperience && this.props.resumeBasicInfo) {
       var sectionName = this.props.resumeBasicInfo.section_name.experience;
+      var language = this.props.currentLanguage;
+      var getExp = this.getExperienceByLanguage(language);
       var work = this.props.resumeExperience.map(function (work, i) {
         const technologies = work.technologies;
         const mainTechnologies = work.mainTech;
+
+
+
+
 
         var mainTech = mainTechnologies.map((technology, i) => {
           return (
@@ -55,7 +93,15 @@ class Experience extends Component {
               style={{ textAlign: "left" }}
             >
               {work.company}
+
             </h4>
+            <h3
+              className="vertical-timeline-element-title"
+              style={{ textAlign: "left" }}
+            >
+              {getExp}
+              
+            </h3>
             <div style={{ textAlign: "left", marginTop: "15px" }}>{tech}</div>
           </VerticalTimelineElement>
         );
@@ -76,6 +122,7 @@ class Experience extends Component {
         <div className="col-md-8 mx-auto">
           <VerticalTimeline>
             {work}
+
             <VerticalTimelineElement
               iconStyle={{
                 background: "#AE944F",

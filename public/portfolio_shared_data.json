@@ -1,7 +1,7 @@
 {
     "basic_info": {
-      "name": "Davina Griss",
-      "titles": [ "Front-end Developer", "Senior Data Engineer", "Dev Team lead", "Mobile App Developer" ],
+      "name": "Khang",
+      "titles": [ "Front-end Developer", "Software Engineer"],
       "social": [
         {
           "name": "github",
@@ -29,22 +29,18 @@
           "level": "95"
         },
         {
-          "name": "Angular",
+          "name": "React",
           "class": "devicon-angularjs-plain",
           "level": "80"
         },
-        {
-          "name": "TypeScript",
-          "class": "devicon-typescript-plain",
-          "level": "90"
-        },
+        
         {
           "name": "JavaScript",
           "class": "devicon-javascript-plain",
           "level": "70"
         },
         {
-          "name": "Sass",
+          "name": "Java",
           "class": "devicon-sass-original",
           "level": "75"
         },
@@ -54,7 +50,7 @@
           "level": "85"
         },
         {
-          "name": "C#",
+          "name": "C",
           "class": "devicon-csharp-plain",
           "level": "65"
         },
