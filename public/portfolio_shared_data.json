@@ -19,12 +19,12 @@
     "skills": {
       "icons": [
         {
-          "name": "HTML 5",
+          "name": "HTML ",
           "class": "devicon-html5-plain",
           "level": "95"
         },
         {
-          "name": "CSS 3",
+          "name": "CSS ",
           "class": "devicon-css3-plain",
           "level": "95"
         },
@@ -41,24 +41,46 @@
         },
         {
           "name": "Java",
-          "class": "devicon-sass-original",
+          "class": "devicon-java-plain",
           "level": "75"
         },
-        {
-          "name": "Bootstrap",
-          "class": "devicon-bootstrap-plain",
-          "level": "85"
-        },
+        
         {
           "name": "C",
-          "class": "devicon-csharp-plain",
+          "class": "devicon-c-plain",
           "level": "65"
         },
         {
           "name": "MySql",
           "class": "devicon-mysql-plain",
           "level": "60"
+        },
+        {
+          "name": "PostgresSQL",
+          "class": "devicon-postgresql-plain",
+          "level": "60"
+        },
+        {
+          "name": "Nextjs",
+          "class": "devicon-nextjs-plain",
+          "level": "60"
+        },
+        {
+          "name": "Git",
+          "class": "devicon-git-plain",
+          "level": "60"
+        },
+        {
+          "name": "Linux",
+          "class": "devicon-linux-plain",
+          "level": "60"
+        },
+        {
+          "name": "NodeJS",
+          "class": "devicon-nodejs-plain",
+          "level": "60"
         }
+        
       ]
     }
   }
