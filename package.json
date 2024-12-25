@@ -1,6 +1,7 @@
 {
   "name": "react-frontend-dev-portfolio",
-  
+  "homepage": "https://Tyn3.github.io/dlvt",
+
   "version": "0.1.0",
   "private": true,
   "dependencies": {
