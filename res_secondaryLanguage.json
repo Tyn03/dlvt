@@ -1,0 +1,103 @@
+{
+    "basic_info": {
+        "description_header": "Bonjour",
+        "description": "👋 Bonjour à tous, je suis DO Uy Khang du Vietnam. Actuellement, je suis étudiant en 4e année à l'INSA Centre Val de Loire, Bourges, Cher, France.\n\nMon domaine d'études actuel est le génie logiciel et la cybersécurité. J'ai une passion pour créer des solutions logicielles innovantes qui ont un impact. Avec une solide base en algorithmes et une bonne maîtrise de Java et C, j'ai perfectionné mes compétences en programmation orientée objet (OOP) avec Java. Quand je ne code pas, vous pouvez me trouver en train d'explorer de nouvelles technologies, de lire des livres ou de jouer à des jeux vidéo. Grâce à mes projets universitaires et personnels, j'ai acquis une gamme de compétences—en utilisant Node.js, React, Next.js pour le développement, Docker pour le déploiement, et même un aperçu de la cybersécurité.",
+        "section_name": {
+            "about": "À propos de moi",
+            "projects": "Projets",
+            "skills": "Compétences",
+            "experience": "Expérience"
+        }
+    },
+    "projects": [
+        {
+            "title": "KD Store",
+            "startDate": "2024",
+            "description": "Une boutique en ligne simple\n\nJ'ai développé un site e-commerce simple qui permet aux utilisateurs d'acheter et de vendre des produits en ligne. Le site comprend les fonctionnalités de base suivantes :\n\n- **Page de liste des produits** : Affiche une liste de produits avec des images, des prix et des descriptions détaillées.\n- **Panier** : Permet aux utilisateurs d'ajouter, de modifier ou de supprimer des produits dans le panier.\n- **Processus de commande** : Intègre un simple flux de commande pour finaliser les achats.\n- **Page de gestion des produits (pour les vendeurs)** : Permet aux vendeurs d'ajouter, de modifier ou de supprimer des produits.\n\n### Stack technologique & Apprentissages\n\n- **Backend** : Utilisation de Node.js pour construire les APIs.\n- **Frontend** : React.js pour une interface utilisateur dynamique, utilisant une architecture basée sur des composants.\n- **Communication** : APIs pour connecter le backend et le frontend.\n\nCe projet m'a enseigné l'importance de la modularité, chaque fonctionnalité ayant sa propre structure (par ex., contrôleurs, modèles, etc.).",
+            "images": [
+                "images/portfolio/kdstore/ava.jpg",
+                "images/portfolio/kdstore/haugai.jpg",
+                "images/portfolio/kdstore/anh2.jpg",
+                "images/portfolio/kdstore/anh3.jpg"
+            ],
+            "url": "",
+            "technologies": [
+                {
+                    "class": "devicon-angularjs-plain",
+                    "name": "React"
+                },
+                {
+                    "class": "devicon-typescript-plain",
+                    "name": "Nodejs"
+                },
+                {
+                    "class": "devicon-csharp-plain",
+                    "name": "Java"
+                }
+            ]
+        },
+        {
+            "title": "ChatApp",
+            "startDate": "2024",
+            "description": "Projet personnel pour un cours d'étude. J'étais responsable des tests d'une application de photographie qui optimise les images en utilisant des algorithmes populaires employés par des éditeurs graphiques comme Pixlr ou Adobe Photoshop. J'ai obtenu la note maximale :)",
+            "images": [
+                "images/portfolio/chatapp/halo.png",
+                "images/portfolio/chatapp/chat.png",
+                "images/portfolio/chatapp/setava.png"
+            ],
+            "url": "https://halochatttttt.vercel.app/"
+        },
+        {
+            "title": "ShoeShop",
+            "startDate": "2023",
+            "description": "L'une des premières applications sur lesquelles j'ai travaillé pendant mon stage. J'ai dû développer l'implémentation front-end pour une application qui montre des modèles 3D de bâtiments connus. C'était aussi mon premier projet avec le framework Angular. J'ai beaucoup appris !",
+            "images": [
+                "images/portfolio/shoeshop/shoe1.png",
+                "images/portfolio/shoeshop/shoe2.png"
+            ],
+            "url": "https://tyn03.github.io/shoe-Web/",
+            "technologies": [
+                {
+                    "class": "devicon-angularjs-plain",
+                    "name": "HTML"
+                },
+                {
+                    "class": "devicon-typescript-plain",
+                    "name": "TypeScript"
+                },
+                {
+                    "class": "devicon-csharp-plain",
+                    "name": "C#"
+                }
+            ]
+        },
+        {
+            "title": "Système Solaire",
+            "startDate": "2023",
+            "description": "L'une des premières applications sur lesquelles j'ai travaillé pendant mon stage. J'ai dû développer l'implémentation front-end pour une application qui montre des modèles 3D de bâtiments connus. C'était aussi mon premier projet avec le framework Angular. J'ai beaucoup appris !",
+            "images": [
+                "images/portfolio/solarsystem/solarsystem.png"
+            ],
+            "url": "https://antiinsa.github.io/solar-demo/"
+        }
+    ],
+    "experience": [
+        {
+            "company": "Sarl Biwa",
+            "title": "Développeur Front-End",
+            "years": "05.2024-06.2024",
+            "mainTech": [
+                "Savoie, France"
+            ],
+            "technologies": [
+                "ReactJS",
+                "JavaScript",
+                "Jira",
+                "Bitbucket",
+                "Atlassian",
+                "Forge API"
+            ],
+            "description": ""
+        }
+    ]
+}

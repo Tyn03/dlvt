@@ -1,0 +1,110 @@
+{
+    "basic_info": {
+      "description_header": "Hi",
+      "description": "👋 Hi Everyone, I am DO Uy Khang from VietNam. I am currently student at 4th INSA Centre Val de Loire, Bourges, Cher, France.\n\nMy actual study field is software engineering and Cyber Security Information. I have a passion for building innovative software solutions that make an impact. With a strong foundation in algorithms and a solid understanding of Java and C, I have honed my skills in Object-Oriented Programming (OOP) within Java. When I am not coding, you can find me exploring new technologies, reading books, or playing video games. Along both university and personal projects, I have picked up a range of skills—using Node.js, React, Next.js for development, Docker for deployment, and even getting a taste of cybersecurity.",
+      "section_name": {
+        "about": "About me",
+        "projects": "Projects",
+        "skills": "Skills",
+        "experience": "Experience"
+      }
+    },
+    "projects": [
+      {
+        "title": "KD Store",
+        "startDate": "2024",
+        
+          "description": "The short run\n\nI developed a simple e-commerce website that allows users to buy and sell products online. The website includes the following basic features:\n\n- **Product Listing Page**: Displays a list of products with images, prices, and detailed descriptions.\n- **Shopping Cart**: Allows users to add, modify, or remove products from the cart.\n- **Checkout Process**: Integrates a simple checkout flow for completing orders.\n- **Product Management Page (for sellers)**: Enables sellers to add, edit, or delete products.\n\n### Tech Stack & Learnings\n\n- **Backend**: Worked with Node.js for building APIs.\n- **Frontend**: React.js for dynamic UI, using component-based architecture.\n- **Communication**: APIs for connecting backend and frontend.\n\nThe project taught me the importance of modularity, as each feature had its own structure (e.g., controllers, models, etc.).",
+        
+        
+        "images": [
+          "images/portfolio/kdstore/ava.jpg",
+          "images/portfolio/kdstore/haugai.jpg",
+          "images/portfolio/kdstore/anh2.jpg",
+          "images/portfolio/kdstore/anh3.jpg"
+        ],
+        "url": "",
+        "technologies": [
+          {
+            "class": "devicon-angularjs-plain",
+            "name": "React"
+          },
+          {
+            "class": "devicon-typescript-plain",
+            "name": "Nodejs"
+          },
+          {
+            "class": "devicon-csharp-plain",
+            "name": "java"
+          }
+        ]
+      },
+      {
+        "title": "ChatApp",
+        "startDate": "2024",
+        "description": "Personal project for study subject. I was responsible for testing photography application that optimizes images with popular algorithms used by graphic editors like Pixlr or Adobe Photoshop. I've earned A grade :)",
+        "images": [
+          "images/portfolio/chatapp/halo.png",
+          "images/portfolio/chatapp/chat.png",
+          "images/portfolio/chatapp/setava.png"
+        ],
+        "url": "https://halochatttttt.vercel.app/"
+        
+      },
+      {
+        "title": "ShoeShop",
+        "startDate": "2023",
+        "description": "One of the first apps I was working on my internship. I had to develop front-end implementation for app that shows 3D models of known buildings. This was also my first project in Angular framework. I've learned a lot!",
+        "images": [
+          "images/portfolio/shoeshop/shoe1.png",
+          "images/portfolio/shoeshop/shoe2.png"
+        ],
+        "url": "https://tyn03.github.io/shoe-Web/",
+        "technologies": [
+          {
+            "class": "devicon-angularjs-plain",
+            "name": "HTML"
+          },
+          {
+            "class": "devicon-typescript-plain",
+            "name": "TypeScript"
+          },
+          {
+            "class": "devicon-csharp-plain",
+            "name": "C#"
+          }
+        ]
+      },
+      {
+        "title": "solarsystem",
+        "startDate": "2023",
+        "description": "One of the first apps I was working on my internship. I had to develop front-end implementation for app that shows 3D models of known buildings. This was also my first project in Angular framework. I've learned a lot!",
+        "images": [
+          "images/portfolio/solarsystem/solarsystem.png"
+          
+        ],
+        "url": "https://antiinsa.github.io/solar-demo/"
+        
+      }
+    ],
+    "experience": [
+      {
+        "company": "Sarl Biwa",
+        "title": "Front-End Developer",
+        "years": "5.2024-6.2024",
+        "mainTech": [
+          "Savoie, France"
+        ],
+        "technologies": [
+          "ReactJS",
+          "JavaScript",
+          "Jira",
+          "Bitbucket",
+          "Atlassian",
+          "Forge API"
+        ],
+        "description":""
+      }
+      
+    ]
+  }
