@@ -1,13 +1,25 @@
+/* Remove excess space and customize scrollbar */
+
+/* For Webkit browsers (Chrome, Edge, Safari) */
+.projects-container::-webkit-scrollbar {
+  height: 8px; /* Set the height of the scrollbar */
+}
+
+.projects-container::-webkit-scrollbar-track {
+  background: transparent; /* Make the track invisible */
+}
+
+.projects-container::-webkit-scrollbar-thumb {
+  background: rgba(209, 201, 201, 0.5); /* Dark transparent scrollbar */
+  border-radius: 5px; /* Rounded scrollbar edges */
+}
+
+.projects-container::-webkit-scrollbar-thumb:hover {
+  background: rgba(218, 211, 211, 0.7); /* Slightly darker on hover */
+}
+
+/* For Firefox */
 .projects-container {
-    display: flex;
-    overflow-x: auto; /* Enable horizontal scrolling */
-    gap: 10px;
-    padding: 10px;
-    scroll-behavior: smooth; /* Smooth scrolling for better UX */
-    scrollbar-width: none; /* For Firefox */
-  }
-  
-  .projects-container::-webkit-scrollbar {
-    display: none; /* Hide scrollbar for WebKit browsers */
-  }
-  
+  scrollbar-width: thin; /* Thin scrollbar */
+  scrollbar-color: rgba(110, 112, 129, 0.5) transparent; /* Dark thumb, transparent track */
+}
